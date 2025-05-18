@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Sonuçları</title>
+</head>
+<body>
+    <h1>Test Sonuçları</h1>
+    
+    {% if results %}
+        <ul>
+        {% for result in results %}
+            <li>{{ result }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>Test sonuçları bulunamadı!</p>
+    {% endif %}
+
+    <a href="/">Yeni test başlat</a>
+</body>
+</html>
